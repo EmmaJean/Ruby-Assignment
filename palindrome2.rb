@@ -1,0 +1,22 @@
+#Emma Mossinger
+#Credit: https://github.com/esquireofoz/saas_class/blob/master/hw1/part6.rb
+
+class String
+  def palindrome?
+    tmp_str = self.downcase.gsub(/[^a-z]/,'')
+    tmp_str.reverse == tmp_str
+  end
+end
+
+module Enumerable
+  def palindrome?
+    self == self.reverse
+  rescue NoMethodError
+    self.to_a == self.to_a.reverse
+  end
+end
+
+
+
+
+p [1,2,3,2,1].palindrome?

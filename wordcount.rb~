@@ -1,0 +1,29 @@
+#Part3: Word Count
+
+#Emma Mossinger
+
+#def count_words(string)
+
+  # words = string.downcase
+
+   #\b : word boundary
+
+   #words = words.scan(/\b/)
+   #puts "#{words}"
+
+
+def count_words(str)
+  tmp_hash = { }
+  str.downcase.gsub(/[,-]/,'').split.each do |string|
+    tmp_hash.store(string, tmp_hash[string].to_i + 1)
+    end
+  tmp_hash
+end
+
+#end
+
+
+
+p count_words("A man, a plan, a canal -- Panama") # => {'a' => 3, 'man' => 1, 'canal' => 1, 'panama' => 1, 'plan' => 1}
+
+p count_words "Doo bee doo bee doo"  # => {'doo' => 3, 'bee' => 2}
