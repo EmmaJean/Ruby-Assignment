@@ -91,6 +91,14 @@ p rps_tournament_winner(
 
         [ ["David E.", "R"], ["Richard X.", "P"] ]
 
+    ],
+
+    [
+
+        [ ["bot", "R"], ["Omer", "P"] ],
+
+        [ ["David E.", "S"], ["Richard X.", "P"] ]
+
     ]
 
 ]

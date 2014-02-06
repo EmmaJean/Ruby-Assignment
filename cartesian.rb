@@ -24,7 +24,7 @@ class CartesianProduct
 end
 
 
-p c = CartesianProduct.new([:a,:b], [])
+p c = CartesianProduct.new([:a,:b], [4,5,6])
 
 p c.each { |elt| puts elt.inspect }
 
